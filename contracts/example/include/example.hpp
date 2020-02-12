@@ -25,7 +25,7 @@ public:
 
     //======================== notification actions ========================
 
-    [[eosio::on_notify("trailservice::bcastresults")]]
+    [[eosio::on_notify("trailservice::postresults")]]
     void catch_bcast(name ballot_name, map<name, asset> final_results, uint32_t total_voters);
 
     //======================== tables ========================
